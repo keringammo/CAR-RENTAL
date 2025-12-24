@@ -47,6 +47,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Django default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,11 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # third-party
+    # Third-party apps
     'rest_framework',
     'corsheaders',
 
-   
     # Local apps
     'apps.users.apps.UsersConfig',
     'apps.vehicles.apps.VehiclesConfig',
@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'apps.payments.apps.PaymentsConfig',
     'apps.reviews.apps.ReviewsConfig',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
