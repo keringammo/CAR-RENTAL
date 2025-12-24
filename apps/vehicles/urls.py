@@ -1,10 +1,7 @@
-from rest_framework.routers import DefaultRouter
-from .views import VehicleViewSet
-from django.urls import path, include
-
-router = DefaultRouter()
-router.register('', VehicleViewSet)
+from django.urls import path
+# from .views import UserListView, UserDetailView  # comment this out until you create the views
 
 urlpatterns = [
-    path('', include(router.urls)),
+    # path('', UserListView.as_view()),  # comment or remove
+    # path('<int:pk>/', UserDetailView.as_view()),  # comment or remove
 ]
